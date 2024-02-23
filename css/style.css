@@ -1,0 +1,256 @@
+.navbar-brand {
+    font-weight: bold;   
+}
+
+.navbar-brand img {
+    width: 30px; /* Ajuste a largura conforme necessário */
+    height: auto; /* A altura será ajustada proporcionalmente à largura */
+}
+
+#Apresentacao{
+
+    text-align: center;
+    color: white;
+    font-family: sans-serif ;
+    background-color: rgb(124, 101, 146);
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+#titulo-principal{
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;   
+}
+
+#paragrafo-apresentacao {
+
+    text-align: center;
+    margin-left: 250px ;
+    margin-right: 250px;
+    line-height: 2;
+    font-family: Arial;
+    @media screen and (max-width: 600px) {
+        margin: 0 10px; /* Ajuste a margem para telas muito pequenas */
+    }
+    
+}
+
+#Diretrizes-Acesso{
+
+    text-align: center;
+    font-weight: bold;  
+    padding-top: 40px;
+}
+
+#Diretrizes-Acesso img{
+    width: 30px;
+    height: auto;
+}
+
+
+.col {
+    padding: 20px;
+
+
+}
+
+.card-body{
+
+    border-radius: 5px;
+    border: 2px solid  rgb(124, 101, 146);
+    
+    background-color: white;
+}
+
+#op1 img {
+    width: 30px; 
+    height: auto;
+}
+
+#op2 img {
+    width: 30px; 
+    height: auto; 
+}
+
+#op3 img {
+    width: 30px;
+    height: auto; 
+}
+
+#op4 img {
+    width: 30px; 
+    height: auto; 
+}
+
+#op5 img {
+    width: 30px;
+    height: auto;
+}
+
+#Diretrizes-Navegacao{
+    
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#Secao1DiretrizesVisuais {
+    text-align: center;
+    color: white;
+    font-weight: bold;  
+    font-family: sans-serif ;
+    background-color:  rgb(124, 101, 146);
+    border: 4px solid purple; /* Adiciona uma borda de 2 pixels sólida de cor roxa */
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 25pc; 
+    margin-right: 25pc;
+    margin-bottom: 50px;
+    @media screen and (max-width: 600px) {
+        margin: 0 10px; /* Ajuste a margem para telas muito pequenas */
+    }
+}
+
+#Secao2DiretrizesAuditiva {
+    text-align: center;
+    color: white;
+    font-weight: bold;  
+    font-family: sans-serif ;
+    background-color:  rgb(124, 101, 146);
+    border: 4px solid purple; /* Adiciona uma borda de 2 pixels sólida de cor roxa */
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 25pc; 
+    margin-right: 25pc; 
+    margin-bottom: 50px;
+    margin-top: 50px;
+    @media screen and (max-width: 600px) {
+        margin: 0 10px; /* Ajuste a margem para telas muito pequenas */
+    }
+}
+
+#Secao3DiretrizesMotora {
+    text-align: center;
+    color: white;
+    font-weight: bold;  
+    font-family: sans-serif ;
+    background-color:  rgb(124, 101, 146);
+    border: 4px solid purple; /* Adiciona uma borda de 2 pixels sólida de cor roxa */
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 25pc; 
+    margin-right: 25pc; 
+    margin-bottom: 50px;
+    margin-top: 50px;
+    @media screen and (max-width: 600px) {
+        margin: 0 10px; /* Ajuste a margem para telas muito pequenas */
+    }
+}
+
+#Secao4DiretrizesCognitivaNeural {
+    text-align: center;
+    color: white;
+    font-weight: bold;  
+    font-family: sans-serif ;
+    background-color:  rgb(124, 101, 146);
+    border: 4px solid purple; /* Adiciona uma borda de 2 pixels sólida de cor roxa */
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 25pc; 
+    margin-right: 25pc; 
+    margin-bottom: 50px;
+    margin-top: 50px;
+    @media screen and (max-width: 600px) {
+        margin: 0 10px; /* Ajuste a margem para telas muito pequenas */
+    }
+}
+
+#Secao5DiretrizesEspectroAutista {
+    text-align: center;
+    color: white;
+    font-weight: bold;  
+    font-family: sans-serif ;
+    background-color:  rgb(124, 101, 146);
+    border: 4px solid purple; /* Adiciona uma borda de 2 pixels sólida de cor roxa */
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 25pc; 
+    margin-right: 25pc; 
+    margin-bottom: 50px;
+    margin-top: 50px;
+    @media screen and (max-width: 600px) {
+        margin: 0 10px; /* Ajuste a margem para telas muito pequenas */
+    }
+}
+
+#Secao6ReferenciasDiretrizes {
+    text-align: center;
+    color: white;
+    font-weight: bold;  
+    font-family: sans-serif ;
+    background-color:  rgb(124, 101, 146);
+    border: 4px solid purple; /* Adiciona uma borda de 2 pixels sólida de cor roxa */
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 25pc; 
+    margin-right: 25pc; 
+    margin-bottom: 50px;
+    margin-top: 50px;
+    @media screen and (max-width: 600px) {
+        margin: 0 10px; /* Ajuste a margem para telas muito pequenas */
+    }
+}
+
+/* Definição inicial dos cards */
+.card {
+    max-height: 200px; /* Altura máxima para os cards */
+    overflow: hidden; /* Oculta o conteúdo que ultrapassa a altura */
+    transition: max-height 0.3s ease; /* Adiciona uma transição suave na mudança de altura */
+}
+  
+.card-body {
+    overflow: hidden;
+    text-overflow: ellipsis !important; /* Adiciona reticências (...) ao texto cortado NÃO TA FUNCIONANDO*/
+    padding-bottom: 20px !important; /* Adiciona espaço extra no final do texto NAO TA FUNCIONANDO */
+}
+  
+.card:hover { /*mouse no card e expande ele*/
+    max-height: none; /* Remove a altura máxima para expandir o card */
+}
+
+  /* Estilo do link para retornar à página inicial */
+  .card-title {
+    text-align: center;
+    color: white !important; /* Definir a cor do texto como branco e usar !important para priorizar esta regra */
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: rgb(124, 101, 146);
+    border: 4px solid rgb(135, 71, 135);
+    border-radius: 10px;
+}
+
+.list-group-item:target {
+    border: 4px solid rgb(135, 71, 135);
+    border-radius: 10px;
+    font-weight: bold; 
+}
+
+.card-link:active {
+    color: rgb(123, 0, 255); 
+    text-decoration: none; 
+}
+
+
+
+
+  
+

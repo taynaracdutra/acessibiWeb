@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="icon" href="imagens/AcessibiWebSimboloAcessibilidade.png" type="image/png" sizes="16x16">
+    <title>AcessibiWeb</title>
+</head>
+
+<body>
+
+  <header class="header"> <!--cabeçalho onde estou definindo o NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" role="navigation" aria-label="Barra de Navegação"> <!--role navigation ARIA para informar barra de navegação-->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="imagens/AcessibiWebSimboloAcessibilidade.png" alt="Logotipo"> AcessibiWeb</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Apresentacao" aria-label="Ir para Inicio da Pagina Web"> Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#referencias-diretrizes">Referências</a>
+              </li>
+            </ul>
+  </header>
+
+            <div id="Apresentacao"> 
+            <h1 id="titulo-principal" role="heading" aria-level="1" aria-label="Título Principal">AcessibiWeb - Diretrizes de Acessibilidade na Web</h1> <!--definindo como Titulo Principal na pagina na ordem ARIA-->
+            <p id="paragrafo-apresentacao" role="text" aria-label="Texto Apresentacao"> A WEB é uma poderosa ferramenta de inclusão, por este motivo existem diretrizes de acessibilidade web, que podem ser definidas como recomendações que possuem o objetivo de tornar a construção de Web Sites e Conteúdos na Web mais acessíveis a todos os usuários. Esta página reune diversas diretrizes de acessibilidade web categorizadas de acordo com as deficiências as quais podem oferecer suporte quando utilizadas em sites e conteúdos. </p>
+            </div>
+
+            <div id="Diretrizes-Navegacao">
+              <p id="Diretrizes-Acesso" role="text" aria-label="Acesso-Diretrizes"> <img src="imagens/icone-opcoespesquisa.png" alt="Ícone Opcoes Pesquisa"> Consultar Diretrizes de Acessibilidade Web para:</p> 
+              <div class="container text-center" role="group" aria-label="Tipos de Deficiência">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5" role="list">
+
+                    <a href="#diretrizes-deficiencia-visual" class="link-opacity-50-hover" aria-label="Ir para Diretrizes sobre Deficiência Visual" > <div id="op1" class="col" role="listitem"> <img src="imagens/icone-leitura.png" alt="Ícone Leitura"> Deficiência Visual</div> </a>
+
+                    <a href="#diretrizes-deficiencia-auditiva" class="link-opacity-50-hover" aria-label="Ir para Diretrizes sobre Deficiência Auditiva" ><div id="op2" class="col" role="listitem"><img src="imagens/icone-leitura.png" alt="Ícone Leitura"> Deficiência Auditiva</div></a>
+
+                    <a href="#diretrizes-deficiencia-motora" class="link-opacity-50-hover" aria-label="Ir para Diretrizes sobre Deficiência Motora"> <div id="op3" class="col" role="listitem"><img src="imagens/icone-leitura.png" alt="Ícone Leitura"> Deficiência Motora</div></a>
+
+                    <a href="#diretrizes-deficiencia-cognitivaneural" class="link-opacity-50-hover" aria-label="Ir para Diretrizes sobre Deficiência Cognitiva e Neural" ><div id="op4" class="col" role="listitem"><img src="imagens/icone-leitura.png" alt="Ícone Leitura"> Deficiência Cognitiva e Neural</div></a>
+
+                    <a href="#diretrizes-transtorno-espectro-autista" class="link-opacity-50-hover" aria-label="Ir para Diretrizes sobre Transtorno do Espectro Autista"> <div id="op5" class="col" role="listitem"> <img src="imagens/icone-leitura.png" alt="Ícone Leitura"> Transtorno do Espectro Autista</div></a>
+                </div>
+              </div>              
+              </div>
+            </div>
+        
+        <!--SEÇÃO DAS DIRETRIZES COMEÇANDO-->
+        <!--DIRETRIZES DE VISUAL-->
+        <section id="diretrizes-deficiencia-visual" role="region" aria-label="Diretrizes Deficiencia Visual">
+        <header id="Secao1DiretrizesVisuais" role="heading" aria-level="2">
+           Diretrizes de Acessibilidade Web para deficiência visual
+        </header>
+        
+        <div class="container text-center" role="region" aria-label="Seção Principal" tabindex="0">
+        <div class="row align-items-center" role="group" aria-label="Itens Alinhados na Linha">
+        
+          <div class="col">
+            <div class="card" tabindex="0">
+                <div class="card-body">
+                  <h5 class="card-title">Conteúdo pop-up</h5>
+                  <p class="card-text">É indicado que a abertura de elemento pop-up seja previamente avisada em ação anterior do usuário, desta forma é evidente o conteúdo que irá acessar. Deverá ser garantido interação entre ações do teclado e o conteúdo, oferecendo ao usuário opções.</p>
+                  <a href="#list-group-item4" class="card-link" aria-label="Ir para a seção de referências">Referência</a> 
+                </div>
+              </div>
+          </div>
+
+          <div class="col">
+            <div class="card" tabindex="0">
+              <div class="card-body">
+                <h5 class="card-title">Componente Carrossel</h5>                
+                <p class="card-text">É indicado que os conteúdos presentes em um elemento carrossel (slideshow no HTML e CSS), sejam devidamente identificados no código, por meio de estrutura hierárquica utilizando por exemplo no HTML atributos como "aria-label" para rotular e elementos "section" ou "div" para indicar a seção no carrossel. Ainda a estrutura e informações principais não devem sofrer alterações sem prévia notificação ao usuário. 
+                </p>
+                <a href="#list-group-item4" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card" tabindex="0">
+              <div class="card-body">
+                <h5 class="card-title">Abas e mudanças de janelas</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+                <p class="card-text"> É indicado que os títulos das abas (definido no elemento "title" no HTML)  e seus conteúdos sejam coesos, garantindo lógica ao acesso do usuário, bem como é necessário garantir acesso às abas via teclado (utilizando atributos ARIA como "aria-selected"). É preciso sinalizar também, a mudança entre janela atual para outra, garantindo ao usuário o contexto da navegação.</p>
+                <a href="#list-group-item4" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container text-center">
+            <div class="row align-items-center">
+    
+              <div class="col">
+                <div class="card"tabindex="0">
+                    <div class="card-body">
+                      <h5 class="card-title">Idioma</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+                      <p class="card-text">É indicado definir através do atributo "lang" no HTML o idioma principal apresentado no website, bem como para cada conteúdo apresentado em idioma diferente, é necessário definir previamente no código. </p>
+                      <a href="#list-group-item5" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                    </div>
+                  </div>
+              </div>
+    
+              <div class="col">
+                <div class="card" tabindex="0">
+                  <div class="card-body">
+                    <h5 class="card-title">Cabeçalhos Sequenciais</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+                    <p class="card-text">É indicado que os websites utilizem estruturas de cabeçalhos de maneira lógica e sequencial ("h1" ao "h6" no HTML), oferecendo organização nas páginas, seções e demais elementos. É importante frisar que os elementos "h1" e "h6" são hierarquizados e portanto devem ser utilizados em sequência, sendo o "h1" comumente atrelado ao título mais importante do website, e usado apenas uma vez. Estas práticas garantem uma usabilidade descomplicada e objetiva aos leitores de tela.</p>
+                    <a href="#list-group-item5" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                  </div>
+                </div>
+              </div>
+    
+    
+              <div class="col">
+                <div class="card" tabindex="0">
+                  <div class="card-body">
+                    <h5 class="card-title">Cores e Informações</h5>
+                    <p class="card-text">É indicado evitar fazer instruções por cores como por exemplo “clique no botão azul”, bem como tabelas e gráficos não devem se ater também apenas a cores para transmitir os dados. </p>
+                    <a href="#list-group-item5" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container text-center">
+                <div class="row align-items-center">
+        
+                  <div class="col">
+                    <div class="card" tabindex="0">
+                        <div class="card-body">
+                          <h5 class="card-title">Título Principal</h5>
+                          <p class="card-text">É indicado definir um título principal (elemento "title" no HTML) para o website, que seja claro e coeso com o conteúdo apresentado, assim como o uso de títulos e subtítulos hierarquizados no mapa do site. (elementos "h1"  ao "h6" no HTML)</p>
+                          <a href="#list-group-item5" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                        </div>
+                      </div>
+                  </div>
+        
+                  <div class="col">
+                    <div class="card" tabindex="0">
+                      <div class="card-body">
+                        <h5 class="card-title">Gráficos</h5>
+                        <p class="card-text">É indicado utilizar rótulos (elemento "label" no HTML) e legendas compreensíveis para conteúdos apresentados em modalidade de gráficos no website, garantindo maior sucesso aos leitores de tela.</p>
+                        <a href="#list-group-item5" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                      </div>
+                    </div>
+                  </div>
+        
+        
+                  <div class="col">
+                    <div class="card" tabindex="0">
+                      <div class="card-body">
+                        <h5 class="card-title">Estrutura no código e precisão no conteúdo</h5>
+                        <p class="card-text">É indicado garantir uma estrutura clara, de fácil entendimento e navegação ao usuário, dispondo título da aba e cabeçalhos (elementos "titles", "headers" e "h1" ao "h6" no HTML) coesos e descritivo de acordo com os conteúdos que apresentam, assim como os links apresentados em conteúdos devem ser descritivos quanto ao objetivo que possuem. Em conteúdos em tabelas, as colunas precisam estar rotuladas ("label" no HTML)  corretamente, auxiliando no entendimento dos dados apresentados.</p>
+                        <a href="#list-group-item5" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="container text-center">
+                    <div class="row align-items-center">
+            
+                      <div class="col">
+                        <div class="card" tabindex="0">
+                            <div class="card-body">
+                              <h5 class="card-title">Acesso via teclado</h5>
+                              <p class="card-text">É indicado que todas as funcionalidades dispostas no site possam ser acessadas via teclados, uma vez que o ponteiro do mouse pode não ser uma alternativa aos usuários cegos e de baixa visão.</p>
+                              <a href="#list-group-item5" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                            </div>
+                          </div>
+                      </div>
+            
+                      <div class="col">
+                        <div class="card" tabindex="0">
+                          <div class="card-body">
+                            <h5 class="card-title">Links descritivos</h5>
+                            <p class="card-text">É indicado que os links do website sejam descritivos e compreensíveis, possibilitando ao usuário prever para onde serão direcionados ao clicar neles (elemento "a href= " no HTML, que é disposto como uma âncora e possui a capacidade de exibir um texto descritivo, sendo aconselhavél rotular descritivamente com o atributo "aria-label" os links apresentados). </p>
+                            <a href="#list-group-item5" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                          </div>
+                        </div>
+                      </div>
+            
+            
+                      <div class="col">
+                        <div class="card" tabindex="0">
+                          <div class="card-body">
+                            <h5 class="card-title">Conteúdo Audiovisual
+                            </h5>
+                            <p class="card-text">É indicado que conteúdos em vídeos e áudios apresentados no website ofereçam suportes textuais, como descrições de áudio e legendas estendidas.</p>
+                            <a href="#list-group-item6" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="container text-center">
+                        <div class="row align-items-center">
+                
+                          <div class="col">
+                            <div class="card" tabindex="0">
+                                <div class="card-body">
+                                  <h5 class="card-title">Imagens e elementos não textuais</h5>
+                                  <p class="card-text"> É indicado a disponibilização de textos alternativos como suporte para imagens e demais conteúdos não textuais dispostos no website, podendo ser inseridas pelo atributo 'alt' no elemento "img" em HTML,  garantindo o sucesso para leitores de tela.</p>
+                                  <a href="#list-group-item6" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                </div>
+                              </div>
+                          </div>
+                
+                          <div class="col">
+                            <div class="card" tabindex="0">
+                              <div class="card-body">
+                                <h5 class="card-title">Rótulos em Formulários</h5>
+                                <p class="card-text">É indicado que todos os elementos presentes em formulários de entrada de dados (elemento "forms" no HTML), ofereçam sinalização correta por rótulos para todos os campos dispostos (atributo "aria-label" no HTML)."</p>
+                                <a href="#list-group-item6" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                              </div>
+                            </div>
+                          </div>
+                
+                
+                          <div class="col">
+                            <div class="card" tabindex="0">
+                              <div class="card-body">
+                                <h5 class="card-title">Tabelas</h5>
+                                <p class="card-text">É indicado coesão nas tabelas apresentadas no website (elemento "table" no HTML), disposta de maneira sequencial, assim como é indicado evitar o alinhamento das tabelas.</p>
+                                <a href="#list-group-item6" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="container text-center">
+                            <div class="row align-items-center">
+                    
+                              <div class="col">
+                                <div class="card" tabindex="0">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Identificação de elementos gráficos</h5>
+                                      <p class="card-text">É indicado a identificação através de rótulos (atributo "aria-label" no HTML) para elementos gráficos apresentados no website, sejam eles gráficos, botões (tag "button") ou formulários (elemento "forms").</p>
+                                      <a href="#list-group-item7" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                    </div>
+                                  </div>
+                              </div>
+                    
+                              <div class="col">
+                                <div class="card" tabindex="0">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Feedback em ações em sites de e-commerce</h5>
+                                    <p class="card-text">É indicado fornecer feedbacks ao usuário em ações cruciais no website de e-commerce, como por exemplo seleção de produtos, descontos possíveis ou quantidade de mercadoria no carrinho.</p>
+                                    <a href="#list-group-item7" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                  </div>
+                                </div>
+                              </div>
+                    
+                    
+                              <div class="col">
+                                <div class="card" tabindex="0">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Algoritmo de buscas em sites e-commerce</h5>
+                                    <p class="card-text">É indicado que os mecanismos de busca estejam alinhados, ou seja, o algoritmo precisa retornar palavras-chaves procuradas com os conteúdos que as contém.</p>
+                                    <a href="#list-group-item7" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="container text-center">
+                                <div class="row align-items-center">
+                        
+                                  <div class="col">
+                                    <div class="card" tabindex="0">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Funções essenciais e sequência em sites e-commerce</h5>
+                                          <p class="card-text">É indicado que funções com seções essenciais do websites, por exemplo carrinho de compras, sejam fortemente rotuladas e sequenciadas, para proporcionar compreensão e facilidade ao usuário. É possível utilizar 'headers' para cabeçalho principal, 'h1' ao 'h6' para títulos, 'section' para diferentes seções e 'aria-label' para rótular no HTML."</p>
+                                          <a href="#list-group-item6" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                        </div>
+                                      </div>
+                                  </div>
+                        
+                                  <div class="col">
+                                    <div class="card" tabindex="0">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Contrastes de Cores</h5>
+                                        <p class="card-text">É indicado garantir contraste de cores suficiente entre primeiro plano e o fundo do conteúdo apresentado no website, oferecendo desta forma maior compreensão ao usuário. </p>
+                                        <a href="#list-group-item9" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                        
+                        
+                                  <div class="col">
+                                    <div class="card" tabindex="0">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Valores em elemento lista</h5>
+                                        <p class="card-text">É indicado que todos os conteúdos de lista (elementos 'ol' ou 'ul' no HTML) tenham valor exclusivo em seus itens ('li' no HTML, sendo possível inserir um id em cada 'li'), garantindo precisão e compreensão para o usuário. </p>
+                                        <a href="#list-group-item9" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="container text-center">
+                                    <div class="row align-items-center">
+                            
+                                      <div class="col">
+                                        <div class="card" tabindex="0">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Elemento Marquee</h5>
+                                              <p class="card-text"> É desaconselhado o uso de elemento 'marquee' no HTML, responsável por fornecer uma área similar a um letreiro de texto scrolling, podendo movimentar o texto horizontalmente ou verticalmente. É desaconselhado pelas mesmas razões de slideshow e carrosséis, limitando acessibilidade ao usuário em termos de leitura e compreensão.</p>
+                                              <a href="#list-group-item9" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                            </div>
+                                          </div>
+                                      </div>
+                            
+                                      <div class="col">
+                                        <div class="card" tabindex="0">
+                                          <div class="card-body">
+                                            <h5 class="card-title">Mecanismos de Acessibilidade</h5>
+                                            <p class="card-text">É indicado que o website permita o uso de mecanismos que ofereçam suporte ao contraste de cores e funcionalidades por teclado.</p>
+                                            <a href="#list-group-item10" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                            
+                            
+                                      <div class="col">
+                                        <div class="card" tabindex="0">
+                                          <div class="card-body">
+                                            <h5 class="card-title">Contraste e Brilho</h5>
+                                            <p class="card-text">É indicado que o website ofereça mecanismos de ajustes de contraste e brilho ao usuário, promovento uma adaptabilidade melhor.</p>
+                                            <a href="#list-group-item10" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="container text-center">
+                                        <div class="row align-items-center">
+                                
+                                          <div class="col">
+                                            <div class="card" tabindex="0">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Ajustes e sintetizador de fala</h5>
+                                                  <p class="card-text">É indicado que o website ofereça aos usuários possibilidade de ajustes em características de fala concedidas pelo sintetizador de fala. 
+                                                  </p>
+                                                  <a href="#list-group-item10" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                                </div>
+                                              </div>
+                                          </div>
+                                
+                                          <div class="col">
+                                            <div class="card" tabindex="0">
+                                              <div class="card-body">
+                                                <h5 class="card-title">Rótulos e caixas de texto</h5>
+                                                <p class="card-text">É indicado a utilização de rótulos coesos ('aria-label' no HTML) associados as caixas de texto ('input type=""text"''> no HTML), oferecendo assim maior especificação quanto ao conteúdo apresentado e requisitado.</p>
+                                                <a href="#list-group-item1" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                
+                                
+                                          <div class="col">
+                                            <div class="card" tabindex="0">
+                                              <div class="card-body">
+                                                <h5 class="card-title">Feedbacks e sinalização em ações cruciais</h5>
+                                                <p class="card-text">É indicado disponibilizar feedbacks ao usuário, de maneira destacada utilizando cores em conjunto com asteriscos, como por exemplo: campos obrigatórios em formulários, que podem ser sinalizados de acordo com asteriscos vermelhos.É possível utilizar o atributo 'required' no HTML para campos obrigatórios, acompanhado de texto claro e objetivo sobre a obrigatoriedade.</p>
+                                                <a href="#list-group-item1" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                              </div>
+                                            </div>
+                                          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          <a href="#Apresentacao" class="link-final" aria-label="Retornar para o início da página">Retornar para o início da página</a>
+
+
+             </section>
+
+             <!--DEFICIENCIA AUDITIVA COMEÇANDO-->
+             <section id="diretrizes-deficiencia-auditiva" role="region" aria-label="Diretrizes Deficiencia Auditiva">
+              <header id="Secao2DiretrizesAuditiva" role="heading" aria-level="3">
+                 Diretrizes de Acessibilidade Web para deficiência auditiva
+              </header>
+      
+              <div class="container text-center" role="region" aria-label="Seção Principal" tabindex="0">
+              <div class="row align-items-center" role="group" aria-label="Itens Alinhados na Linha">
+              
+                <div class="col">
+                  <div class="card" tabindex="0">
+                      <div class="card-body">
+                        <h5 class="card-title">Links</h5>
+                        <p class="card-text">É indicado a utilização de rótulos (atributo "label" no HTML) e descrições para tornar os links compreensíveis aos usuários, deixando claro para onde levarão e o conteúdo que possuem.</p>
+                        <a href="#list-group-item3" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                      </div>
+                    </div>
+                </div>
+      
+                <div class="col">
+                  <div class="card" tabindex="0">
+                    <div class="card-body">
+                      <h5 class="card-title">Glossário</h5>
+                      <p class="card-text">É indicado a disponibilização de glossário em linguagem de sinais para todos os conteúdos em textos disponibilizados no website.</p>
+                      <a href="#list-group-item3" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                    </div>
+                  </div>
+                </div>
+      
+      
+                <div class="col">
+                  <div class="card" tabindex="0">
+                    <div class="card-body">
+                      <h5 class="card-title">Vocabulário</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+                      <p class="card-text">É indicado a utilização do método leitura fácil,que objetiva proporciona textos curtos e menos complexos, garantindo maior compreensão ao usuário.</p>
+                      <a href="#list-group-item3" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="container text-center">
+                  <div class="row align-items-center">
+          
+                    <div class="col">
+                      <div class="card" tabindex="0">
+                          <div class="card-body">
+                            <h5 class="card-title">Títulos</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+                            <p class="card-text">É indicado definir um título (tag title no HTML) coeso e claro para a página web, apresentando o conteúdo. O mesmo deverá ser seguido para títulos principais e subtítulos (elementos "h1" ao "h6" no HTML) de seção e conteúdo do web site </p>
+                            <a href="#list-group-item3" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                          </div>
+                        </div>
+                    </div>
+          
+                    <div class="col">
+                      <div class="card"tabindex="0">
+                        <div class="card-body">
+                          <h5 class="card-title">Descrição de Links</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+                          <p class="card-text">É indicado que os links do web site sejam descritivos e compreensíveis, possibilitando ao usuário prever para onde serão direcionados ao clicar neles. Oferecer uma estrutura de navegação lógica, garante ao usuário acessibilidade na navegação. </p>
+                          <a href="#list-group-item3" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                          
+                        </div>
+                      </div>
+                    </div>
+          
+          
+                    <div class="col">
+                      <div class="card"tabindex="0">
+                        <div class="card-body">
+                          <h5 class="card-title">Acesso via teclado</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+                          <p class="card-text">É indicado que todas as funcionalidades dispostas no web site sejam acessadas via teclado, já que o ponteiro do mouse pode não ser uma alternativa aos usuários cegos. Seguir a semântica no HTML pode oferecer navegabilidade pelo teclado.  </p>
+                          <a href="#list-group-item3" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="container text-center">
+                      <div class="row align-items-center">
+              
+                        <div class="col">
+                          <div class="card"tabindex="0">
+                              <div class="card-body">
+                                <h5 class="card-title">Legendas</h5>
+                                <p class="card-text">É indicado que todo conteúdo no website, apresentado por áudio possua legendas descritivas fiés ao conteúdo em mídia.</p>
+                                <a href="#list-group-item9" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                              </div>
+                            </div>
+                        </div>
+              
+                        <div class="col">
+                          <div class="card"tabindex="0">
+                            <div class="card-body">
+                              <h5 class="card-title">Conteúdo Sequencial</h5>
+                              <p class="card-text">É indicado que o website siga uma sequência coesa ao apresentar elementos e conteúdos, para que o usuário tenha uma navegabilidade intuitiva e de fácil compreensão.</p>
+                              <a href="#list-group-item1" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                            </div>
+                          </div>
+                        </div>
+              
+              
+                        <div class="col">
+                          <div class="card"tabindex="0">
+                            <div class="card-body">
+                              <h5 class="card-title">Idioma</h5>
+                              <p class="card-text">É indicado que a utilização do atributo 'lang'no HTML, com o intuito de especificar o idioma utilizado pelo website, e quando conteúdos forem apresentados em outro idioma, deverá ser previamente disposto no código.</p>
+                              <a href="#list-group-item9" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                            </div>
+                          </div>
+                        </div>
+      
+                                <a href="#Apresentacao" class="link-final" aria-label="Retornar para o início da página">Retornar para o início da página</a>
+
+      
+                   </section>
+
+                   <!--Deficiencia MOtora Começando-->
+                   <section id="diretrizes-deficiencia-motora" role="region" aria-label="Diretrizes Deficiencia Motora">
+                    <header id="Secao3DiretrizesMotora" role="heading" aria-level="4">
+                       Diretrizes de Acessibilidade Web para deficiência motora
+                    </header>
+            
+                    <div class="container text-center" role="region" aria-label="Seção Principal" tabindex="0">
+                    <div class="row align-items-center" role="group" aria-label="Itens Alinhados na Linha">
+                    
+                      <div class="col">
+                        <div class="card" tabindex="0">
+                            <div class="card-body">
+                              <h5 class="card-title">Acessibilidade para navegação via teclado</h5>
+                              <h6 class="card-subtitle mb-2 text-body-secondary"> </h6>
+                              <p class="card-text"> É indicado que os websites sejam construídos de maneira a oferecer navegação e acesso ao usuário através do teclado, e não apenas pelo ponteiro do mouse. Seguir a hierarquia do HTML e proporcionar estrutura ao código é de suma importância, podendo utilizar também o atributo "tabindex" para tornar o elemento focavél em navegações via teclado. </p>
+                              <a href="#list-group-item1" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                            </div>
+                          </div>
+                      </div>
+            
+                      <div class="col">
+                        <div class="card" tabindex="0">
+                          <div class="card-body">
+                            <h5 class="card-title">Mecanismos de Acessibilidade</h5>
+                            <p class="card-text">É indicado que o website permita o uso de mecanismos que ofereçam suporte ao contraste de cores e funcionalidades por teclado.</p>
+                            <a href="#list-group-item10" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                          </div>
+                        </div>
+                      </div>
+            
+            
+                      <div class="col">
+                        <div class="card" tabindex="0">
+                          <div class="card-body">
+                            <h5 class="card-title">Eventos Javascript</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+                            <p class="card-text">É indicado que haja implementação de eventos a possibilidade de ativação de eventos em javascript, para possibilitar navegação via teclado e não atrelando apenas ao mouse. Por meio de eventos em JS é possível também tornar outros elementos dos websites acessíveis, como cards com destaque em foco.</p>
+                            <a href="#list-group-item13" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#Apresentacao" class="link-final" aria-label="Retornar para o início da página">Retornar para o início da página</a>
+
+            
+                         </section>
+
+                         <!--SEÇAO DIRETRIZES DE DEFICIENCIA COGNITIVA E NEURAL COMEÇANDO--> 
+
+                         <section id="diretrizes-deficiencia-cognitivaneural" role="region" aria-label="Diretrizes Deficiencia Cognitiva e Neural">
+                          <header id="Secao4DiretrizesCognitivaNeural" role="heading" aria-level="5">
+                             Diretrizes de Acessibilidade Web para deficiências cognitiva e neural
+                          </header>
+                  
+                          <div class="container text-center" role="region" aria-label="Seção Principal" tabindex="0">
+                          <div class="row align-items-center" role="group" aria-label="Itens Alinhados na Linha">
+                          
+                            <div class="col">
+                              <div class="card" tabindex="0">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Ícones</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary">Grupo de suporte: Síndrome de Down</h6>
+                                    <p class="card-text">É indicado reduzir o número de ícones e incluir títulos textuais junto quando apresentados em um website.</p>
+                                    <a href="#list-group-item8" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                    
+                                  </div>
+                                </div>
+                            </div>
+                  
+                            <div class="col">
+                              <div class="card" tabindex="0">
+                                <div class="card-body">
+                                  <h5 class="card-title">Links em conteúdo textual</h5>
+                                  <h6 class="card-subtitle mb-2 text-body-secondary">Grupo de suporte: Síndrome de Down</h6>
+                                  <p class="card-text">É indicado que links sejam apresentados diretamente no conteúdo textual principal do website, evitando assim tempo de resposta ao uso do mouse em um menu. É uma maneira de facilitar a navegação do usuário, (podendo utilizar elemento 'a herf="" para o link, que é disposto como uma âncora e possui a capacidade de exibir um texto descritivo).
+                                  <a href="#list-group-item8" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                  
+                  
+                            <div class="col">
+                              <div class="card" tabindex="0">
+                                <div class="card-body">
+                                  <h5 class="card-title">Textos extensos e palavras complexas</h5>
+                                  <h6 class="card-subtitle mb-2 text-body-secondary">Grupo de suporte: Síndrome de Down</h6>
+                                  <p class="card-text">É indicado evitar o uso de textos extensos e palavras muito complexas, mas quando apresentados, precisam de um texto explicativo para oferecer suporte junto, possibilitando melhor interpretação ao usuário. </p>
+                                  <a href="#list-group-item8" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                </div>
+                              </div>
+                            </div>
+                  
+                            <div class="container text-center">
+                              <div class="row align-items-center">
+                      
+                                <div class="col">
+                                  <div class="card"tabindex="0">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Abreviações</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary">Grupo de suporte: Síndrome de Down</h6>
+                                        <p class="card-text">É indicado evitar o uso de abreviações em conteúdos textuais apresentados no website, garantindo ao usuário maior compreensão do conteúdo. </p>
+                                        <a href="#list-group-item8" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                        
+                                      </div>
+                                    </div>
+                                </div>
+                      
+                                <div class="col">
+                                  <div class="card" tabindex="0">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Tamanho de frases</h5>
+                                      <h6 class="card-subtitle mb-2 text-body-secondary">Grupo de suporte: Síndrome de Down</h6>
+                                      <p class="card-text">É indicado a utilização de frases mais curtas nos conteúdos textuais apresentados no website, contendo até 25 palavras, uma vez que pode proporcionar uma experiência melhor de leitura ao usuário. </p>
+                                      <a href="#list-group-item8" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                      
+                      
+                                <div class="col">
+                                  <div class="card" tabindex="0">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Narrador em conteúdos em vídeo</h5>
+                                      <h6 class="card-subtitle mb-2 text-body-secondary">Grupo de suporte: Síndrome de Down</h6>
+                                      <p class="card-text">É indicado a utilização de um narrador visível (pessoa/personagem) para conteúdos apresentados por meio de vídeos. Mesmo vídeos que apenas possuam transcrições e legendas, a utilização de narrador visível é uma recomendação para dar um suporte maior ao usuário. </p>
+                                      <a href="#list-group-item8" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                    </div>
+                                  </div>
+                                </div>
+                  
+                                <div class="container text-center">
+                                  <div class="row align-items-center">
+                          
+                                    <div class="col">
+                                      <div class="card" tabindex="0">
+                                          <div class="card-body">
+                                            <h5 class="card-title">Conteúdos em Áudio</h5>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary">Grupo de suporte: Síndrome de Down</h6>
+                                            <p class="card-text">É indicado que conteúdos em áudio sejam disponibilizados com reprodução em 20dB (decibél utilizado para medir o nível e intensidade do som) e sem ruídos de fundo.</p>
+                                            <a href="#list-group-item8" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                          </div>
+                                        </div>
+                                    </div>
+                          
+                                    <div class="col">
+                                      <div class="card" tabindex="0">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Cronômetros e Temporizadores</h5>
+                                          <h6 class="card-subtitle mb-2 text-body-secondary">Grupo de suporte: Síndrome de Down</h6>
+                                          <p class="card-text">É indicado evitar o uso de temporizadores/cronômetros para resolução de tarefas ou outros em websites, uma vez que pode proporcionar perda de atenção e nervosismo ao usuário. </p>
+                                          <a href="#list-group-item8" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                          
+                          
+                                    <div class="col">
+                                      <div class="card" tabindex="0">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Cor ao fundo</h5>
+                                          <h6 class="card-subtitle mb-2 text-body-secondary">Grupo de suporte: Síndrome de Down</h6>
+                                          <p class="card-text">É indicado a utilização de cor monocromática ao fundo do conteúdo, promovendo destaque e suporte a legibilidade.</p>
+                                          <a href="#list-group-item8" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                  
+                                    <div class="container text-center">
+                                      <div class="row align-items-center">
+                              
+                                        <div class="col">
+                                          <div class="card" tabindex="0">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Feedbacks e sinalização em ações cruciais</h5>
+                                              <p class="card-text">É indicado disponibilizar feedbacks ao usuário, de maneira destacada utilizando cores em conjunto com asteriscos, como por exemplo: campos obrigatórios em formulários, que podem ser sinalizados de acordo com asteriscos vermelhos.É possível utilizar o atributo 'required' no HTML para campos obrigatórios, acompanhado de texto claro e objetivo sobre a obrigatoriedade.</p>
+                                              <a href="#list-group-item1" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                            </div>
+                                          </div>
+                                        </div>
+                              
+                                        <div class="col">
+                                          <div class="card" tabindex="0">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Legendas</h5>
+                                              <p class="card-text">É indicado que todo conteúdo disponibilizado no website em formato de vídeo ofereça , oferecendo suporte ao usuário.</p>
+                                              <a href="#list-group-item11" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                            </div>
+                                          </div>
+                                        </div>
+                              
+                              
+                                        <div class="col">
+                                          <div class="card" tabindex="0">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Elemento Marquee</h5>
+                                              <p class="card-text">É indicado que o elemento 'marquee' no HTML (slideshow) seja substituído por elementos estáticos, objetivando garantir a compreensão para usuários que necessitem de mais tempo para ler e compreender. </p>
+                                              <a href="#list-group-item12" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        
+                                          <a href="#Apresentacao" class="link-final" aria-label="Retornar para o início da página">Retornar para o início da página</a>
+
+                  
+                               </section>
+
+                               <!--COMEÇANDO DIRETRIZES ESPECTRO AUTISTA-->
+
+                               <section id="diretrizes-transtorno-espectro-autista" role="region" aria-label="Diretrizes Transtorno do Espectro Autista">
+                                <header id="Secao5DiretrizesEspectroAutista" role="heading" aria-level="6">
+                                   Diretrizes de Acessibilidade Web para transtorno do espectro autista
+                                </header>
+                        
+                                <div class="container text-center" role="region" aria-label="Seção Principal" tabindex="0">
+                                <div class="row align-items-center" role="group" aria-label="Itens Alinhados na Linha">
+                                              
+                                      <div class="container text-center">
+                                        <div class="row align-items-center">
+                                
+                                          <div class="col">
+                                            <div class="card" tabindex="0">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Elementos</h5>                             
+                                                <p class="card-text">É indicado o uso reduzido de elementos em um site, tendo em vista que quando há presença de muito elementos, pode acarretar uma carga cognitiva maior ao usuário.</p>
+                                                <a href="#list-group-item2" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                                </div>
+                                              </div>
+                                          </div>
+                                
+                                          <div class="col">
+                                            <div class="card" tabindex="0">
+                                              <div class="card-body">
+                                                <h5 class="card-title">Mídia Extra</h5>        
+                                                <p class="card-text">É indicado não disponibilizar mídias extras aos conteúdos, como por exemplo vídeos e áudios de suporte para textos. Quando presentes, podem ocasionar uma compreensão mais longa do conteúdo. </p>
+                                                <a href="#list-group-item2" class="card-link" aria-label="Ir para a seção de referências">Referência</a> 
+                                              </div>
+                                            </div>
+                                          </div>
+                                
+                                
+                                          <div class="col">
+                                            <div class="card" tabindex="0">
+                                              <div class="card-body">
+                                                <h5 class="card-title">Redução de tempo e Informações</h5>
+                                                <p class="card-text">É indicado que haja implementações coesas que objetivem reduzir o tempo para o usuário chegar ao conteúdo desejado e entendê-lo. Disponibilizar mais de um conteúdo como apoio pode ocasionar distração, ao invés disso, é recomendado que se mantenha objetivo e compreensível.</p>
+                                                <a href="#list-group-item2" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                              </div>
+                                            </div>
+                                          </div>
+                        
+                                          <div class="container text-center">
+                                            <div class="row align-items-center">
+                                    
+                                              <div class="col">
+                                                <div class="card" tabindex="0">
+                                                    <div class="card-body">
+                                                      <h5 class="card-title"> Slides e Pré-visualizações Automáticas</h5>
+                                                      <p class="card-text"> É indicado que conteúdos apresentados em forma de slide (como carrosseis no HTML ou elemento marquee), pré visualizações e outros com reprodução automática, permitam tempo extra entre as alterações.</p>
+                                                      <a href="#list-group-item2" class="card-link" aria-label="Ir para a seção de referências">Referência</a>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                              <a href="#Apresentacao" class="link-final" aria-label="Retornar para o início da página">Retornar para o início da página</a>
+                                     </section>
+        </div>
+
+        <section id="referencias-diretrizes" role="region" aria-label="Referências das diretrizes de acessibilidade web apresentadas">
+          <header id="Secao6ReferenciasDiretrizes" role="heading" aria-level="6">
+            Referências das diretrizes de acessibilidade web apresentadas
+          </header>
+          
+          <ul class="list-group">
+            <li id="list-group-item1" class="list-group-item">1. KESSWANI, Nishtha; KUMAR, Sanjay. Government website accessibility: a cross-country analysis of G7 and BRICS countries. Universal Access in the Information Society, p. 1-16, 2021.</li>
+            <li id="list-group-item2" class="list-group-item">2. ERASLAN, Sukru et al. Web users with autism: eye tracking evidence for differences. Behaviour & Information Technology, v. 38, n. 7, p. 678-700, 2019.</li>
+            <li id="list-group-item3" class="list-group-item">3. GUTIÉRREZ, Manuel Martínez; CÁCERES, José Rafael Rojano. Evaluating the effectiveness of accessible websites for deaf users. Universal Access in the Information Society, v. 22, n. 4, p. 1153-1161, 2023.</li>
+            <li id="list-group-item4" class="list-group-item">4. PEREIRA, Letícia Seixas; ARCHAMBAULT, Dominique. Correlating navigation barriers on web 2.0 with accessibility guidelines. In: Computers Helping People with Special Needs: 16th International Conference, ICCHP 2018, Linz, Austria, July 11-13, 2018, Proceedings, Part I 16. Springer International Publishing, 2018. p. 13-21.</li>
+            <li id="list-group-item5" class="list-group-item">5. ALNFIAI, Mrim; ALHAKAMI, Wajdi. The Accessibility of Taif University Blackboard for Visually Impaired Students. IJCSNS International Journal of Computer Science and Network Security, v. 21, n. 6, 2021.</li>
+            <li id="list-group-item6" class="list-group-item">6. SANCHEZ‐GORDON, Sandra et al. Integration of accessibility design patterns with the software implementation process of ISO/IEC 29110. Journal of Software: Evolution and Process, v. 31, n. 1, p. e1987, 2019.</li>
+            <li id="list-group-item7" class="list-group-item">7. GONÇALVES, Ramiro et al. Evaluation of e-commerce websites accessibility and usability: an e-commerce platform analysis with the inclusion of blind users. Universal Access in the Information Society, v. 17, p. 567-583, 2018.</li>
+            <li id="list-group-item8" class="list-group-item">8. ALONSO-VIRGOS, Lucia et al. Design specific user interfaces for people with down syndrome using suitable WCAG 2.0 guidelines. Journal of Ambient Intelligence and Humanized Computing, v. 9, p. 1359-1374, 2018.</li>
+            <li id="list-group-item9" class="list-group-item">9. ISMAIL, Abid; KUPPUSAMY, K. S. Web accessibility investigation and identification of major issues of higher education websites with statistical measures: A case study of college websites. Journal of King Saud University-Computer and Information Sciences, v. 34, n. 3, p. 901-911, 2022.</li>
+            <li id="list-group-item10" class="list-group-item">10. ISMAIL, Abid; KUPPUSAMY, K. S. Accessibility of Indian universities’ homepages: An exploratory study. Journal of King Saud University-Computer and Information Sciences, v. 30, n. 2, p. 268-278, 2018.</li>
+            <li id="list-group-item11" class="list-group-item">11. SCANLON, Erin et al. Physics webpages create barriers to participation for people with disabilities: five common web accessibility errors and possible solutions. International Journal of STEM Education, v. 8, n. 1, p. 1-16, 2021.</li>
+            <li id="list-group-item12" class="list-group-item">12. PAUL, Surjit. Accessibility analysis using WCAG 2.1: evidence from Indian e-government websites. Universal access in the information society, v. 22, n. 2, p. 663-669, 2023.</li>
+            <li id="list-group-item13"class="list-group-item">13. NOGUEIRA, Lisa; GONÇALVES, Ramiro. Health Sector Web Accessibility. In: 2021 16th Iberian Conference on Information Systems and Technologies (CISTI). IEEE, 2021. p. 1-6.</li>
+          </ul>
+        </section>
+
+      </div>
+
+<script src="plus/script.js"></script>
+
+</body>
+</html>
